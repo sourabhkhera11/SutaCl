@@ -1,0 +1,10 @@
+@import "tailwindcss" prefix(st);
+
+*{
+  box-sizing: border-box;
+
+}
+body{
+  font-family: jost;
+  font-weight: 400  
+}

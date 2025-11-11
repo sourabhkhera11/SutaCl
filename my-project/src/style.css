@@ -1,12 +1,17 @@
 @import "tailwindcss" prefix(st);
 
+@theme {
+  --breakpoint-lg: 1023px; /* Or your desired custom value */
+}
 *{
   box-sizing: border-box;
 
 }
 .container{
   max-width: 1170px;
-  margin: auto;
+  margin: auto;@theme {
+  --breakpoint-md: 768px; /* Or your desired custom value */
+}
 }
 body{
   font-family: jost,sans-serif;

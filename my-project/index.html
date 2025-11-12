@@ -91,8 +91,8 @@
   <div class="mobile-bottom-nav st:w-[100%] st:bg-[#fff] st:fixed st:z-100 st:bottom-0 st:py-[10px]">
     <ul class="mobile-bottom-nav--wrapper st:flex st:justify-around">
       <li class="mobile-bottom-nav--item">
-        <a href="/" class="">
-          <div class="mobile-bottom-nav-item--icon st:ml-[10px]">
+        <a href="/" class="st:flex st:flex-col st:items-center">
+          <div class="mobile-bottom-nav-item--icon">
             
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15 15" fill="none">
       <g clip-path="url(#clip0_74_611)">
@@ -112,8 +112,8 @@
       </li>
 
       <li class="mobile-bottom-nav--item" aria-controls="categories-sections--26209942438259__bottom_navigation_yGz9aB">
-        <span class="">
-          <div class="mobile-bottom-nav-item--icon st:ml-[20px]">
+        <a href="/" class="st:flex st:flex-col st:items-center">
+          <div class="mobile-bottom-nav-item--icon ">
             
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 13 13" fill="none" class="categories-icon">
       <rect x="0.433333" y="0.433333" width="4.33333" height="4.33333" stroke="black" stroke-width="0.866667"></rect>
@@ -125,12 +125,12 @@
   
           </div>
           <div class="mobile-bottom-nav-item--text">Categories</div>
-        </span>
+        </a>
       </li>
 
       <li class="mobile-bottom-nav--item" aria-controls="new-launch-sections--26209942438259__bottom_navigation_yGz9aB">
-        <span>
-          <div class="mobile-bottom-nav-item--icon st:ml-[25px]">
+        <a href="/" class="st:flex st:flex-col st:items-center">
+          <div class="mobile-bottom-nav-item--icon ">
             
     <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 20 20" width="20" height="20" style=" transform: scale(1.5);" class="new-launch-icon">
       <title>image (4)</title>
@@ -148,19 +148,20 @@
   
           </div>
           <div class="mobile-bottom-nav-item--text">New Arrivals</div>
-        </span>
+        </a>
       </li>
 
       <li class="mobile-bottom-nav--item  bottom-cart-icon">
-        <div aria-controls="cart-drawer" data-no-instant="">
-          <div class="mobile-bottom-nav-item--icon">
-            <svg aria-hidden="true" fill="none" focusable="false" width="24" class="icon icon-cart" viewBox="0 0 24 24"><path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="9" cy="20" r="1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-          <circle cx="17" cy="20" r="1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+        <a href="" class="st:flex st:flex-col st:items-center">
+          <div aria-controls="cart-drawer" data-no-instant="">
+            <div class="mobile-bottom-nav-item--icon">
+              <svg aria-hidden="true" fill="none" focusable="false" width="24" class="icon icon-cart" viewBox="0 0 24 24"><path d="M10 7h13l-4 9H7.5L5 3H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="9" cy="20" r="1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+            <circle cx="17" cy="20" r="1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+            </div>
           </div>
-          <cart-dot class="header__cart-dot "></cart-dot>
           <div class="mobile-bottom-nav-item--text">Cart</div>
-        </div>
+        </a>
       </li>
     </ul>
   </div>
@@ -177,19 +178,19 @@
       </section>
       <section class="searchbar content st:absolute st:sticky st:top-[63px] st:z-[10]">
         <div class="container ">
-          <div class="filterbar st:flex st:align-middle st:flex-wrap st:gap-[15px] st:md:gap-[50px] st:lg:justify-between st:mt-[0px] st:md:mt-[50px] st:shadow-[0_1px_rgb(221,221,221),_0_-1px_rgb(221,221,221)] st:md:m-[0px] st:md:lg-[-64px] st:bg-[#fff]">
-            <div class="filtersort  st:lg:hidden st:flex st:tracking-[1.98px]  st:text-[11px] st:justify-center st:align-middle st:w-[80%]">
-              <div class="filter st:basis-[50%] st:px-[3px] st:text-center st:py-[13px] st:border-r st:border-[#CBCBCB]">
+          <div class="filterbar st:flex st:align-middle st:flex-wrap st:md:gap-[50px] st:lg:justify-between st:mt-[0px] st:md:mt-[50px] st:shadow-[0_1px_rgb(221,221,221),_0_-1px_rgb(221,221,221)] st:md:m-[0px] st:md:lg-[-64px] st:bg-[#fff]">
+            <div class="filtersort  st:lg:hidden st:flex st:tracking-[1.98px] st:grow  st:text-[11px] st:justify-center st:align-middle ">
+              <div class="filter st:basis-[50%] st:px-[3px] st:text-center st:py-[13px] st:border-r st:border-[#e8e8e1]">
                 FILTER
               </div>
-              <div class="sortby st:py-[13px] st:basis-[50%] st:px-[3px] st:border-r st:border-[#CBCBCB] st:text-center">
+              <div class="sortby st:py-[13px] st:basis-[50%] st:px-[3px] st:border-r st:border-[#e8e8e1] st:text-center">
                 SORT BY
               </div>
             </div>
 
-            <div class="sideicons st:py-[13px]  st:flex st:gap-[16px] st:leading-[1.5] st:cursor-pointer  ">
+            <div class="sideicons st:px-[20px] st:py-[13px]  st:flex st:gap-[16px] st:leading-[1.5] st:cursor-pointer  ">
               <span class=" st:lg:hidden st:block">
-                <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none"><path fill="#CBCBCB" d="M0 0h18v18H0z"></path></svg>
+                <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none"><path fill="#e8e8e1" d="M0 0h18v18H0z"></path></svg>
               </span>
               <span class="st:lg:hidden">
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
@@ -198,7 +199,7 @@
               </span>
               <span class="st:hidden st:lg:block">
                 <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
-                  <path fill="#CBCBCB" d="M0 0h8v8H0zM0 10h8v8H0zM10 0h8v8h-8zM10 10h8v8h-8z"></path>
+                  <path fill="#e8e8e1" d="M0 0h8v8H0zM0 10h8v8H0zM10 0h8v8h-8zM10 10h8v8h-8z"></path>
                 </svg>
               </span>
               <span class="st:md:hidden">
@@ -211,13 +212,13 @@
                 </span>
                 <span class=" st:hidden st:lg:block">
                   <svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
-                  <path fill="#CBCBCB" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"></path>
+                  <path fill="#e8e8e1" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"></path>
                 </svg>
               </span></div>
             <div class="products st:py-[13px] st:flex   st:lg:block st:hidden"><span class="st:text-[12px] st:gap-[5px] st:flex"><span>Showing</span><span>33</span><span>products</span></span>
             </div>
 
-            <div class="sortby st:hidden st:lg:block st:py-[13px] st:border-l st:border-[#CBCBCB] st:group st:relative st:text-[11px] st:flex st:items-center st:gap-[0px] st:align-middle st:justify-center st:text-[#5c5c5c] st:cursor-pointer">
+            <div class="sortby st:hidden st:lg:block st:py-[13px] st:border-l st:border-[#e8e8e1] st:group st:relative st:text-[11px] st:flex st:items-center st:gap-[0px] st:align-middle st:justify-center st:text-[#5c5c5c] st:cursor-pointer">
               <span class="st:flex ">
                 <p class=" st:px-[36px] st:inline-flex">Sort By</p>
                 <div class="st:inline-flex "><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
@@ -237,102 +238,78 @@
       </section>
       <section class="maincontainer st:lg:my-[50px] st:md:my-[0px]  st:my-[0px]">
         <div class="collection container st:md:grid st:lg:grid-cols-[25%_1fr] st:md:gap-[30px]">
-            <div class="sidebar st:hidden st:lg:block st:sticky st:overflow-auto st:top-[200px] st:max-h-[402px] st:overflow-auto ">  
-              <div class="c1 st-widget st-text-[#5c5c5c]  st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+            <div class="sidebar st:hidden st:lg:block st:sticky st:overflow-y-auto st:top-[200px] st:max-h-[402px] ">  
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:cursor-pointer">
                   <h3 class="st:text-[15px]">Availability</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-              </div>
-                <div class="c2 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Price</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c3 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Discount</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c4 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px]">
                   <h3 class="st:text-[15px]">Category</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c5 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px]">
                   <h3 class="st:text-[15px]">Blouse Piece</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c6 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Size</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c7 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Size</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c8 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Colour</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c9 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Fabric</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c10 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Occasion</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c11 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Technique</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
                 </div>
-                </div>
-                <div class="c12 st-widget st-text-[#5c5c5c] st-text-[12px] st-border-b st-border-solid st-border-[rgb(229, 231, 235)] st-head-item">
-                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] st:gap-[170px]">
+                <div class="st:flex st:text-[#5c5c5c] st:text-[12px] st:border-b st:border-solid st:border-[rgb(229,231,235)] st:justify-between st:py-[20px] ">
                   <h3 class="st:text-[15px]">Pattern</h3>
                   <span><span><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"></path>
                   </svg></span>
-                </div>
                 </div>
               </div>            
               <div class="contentarea">

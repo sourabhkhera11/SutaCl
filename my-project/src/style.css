@@ -1,7 +1,7 @@
 @import "tailwindcss" prefix(st);
 
 @theme {
-  --breakpoint-lg: 1023px; /* Or your desired custom value */
+  --breakpoint-lg: 1023px;
 }
 *{
   box-sizing: border-box;
@@ -53,14 +53,20 @@ body{
   margin: auto;
 }
 }
-@media screen and (min-width:768px) and (max-width:1025px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
   .container{
   max-width: 100%;
   margin: auto;
 }
 }
-@media screen and (min-width:1024px) and (max-width:1380px) {
+@media screen and (min-width:1024px) and (max-width:1323px) {
   .searchbar{
     top: 97px;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1170px) {
+  .container{
+    max-width: 1000px;
+    margin: auto;
   }
 }
